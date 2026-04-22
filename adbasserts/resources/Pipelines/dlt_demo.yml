@@ -1,14 +1,13 @@
-id: 12755be6-4ec3-42d2-aba4-8c53875f0c6b
-pipeline_type: WORKSPACE
-name: New Pipeline 2026-04-22 15:20
-libraries:
-  - glob:
-      include: ../Notebooks/dlt_demo_notebook
-schema: default
-continuous: false
-development: false
-photon: true
-channel: CURRENT
-catalog: workspace
-serverless: true
-root_path: /Repos/katakamvamsi37@gmail.com/adbasserts/adbasserts
+resources:
+  pipelines:
+    dlt_demo:
+      name: "New Pipeline 2026-04-22 15:20"
+      channel: CURRENT
+      development: false
+      continuous: false
+      photon: true
+      catalog: ${resources.schemas.bronze_schema.catalog_name}
+      schema: ${resources.schemas.bronze_schema.name}
+      libraries:
+        - notebook:
+            path: ../Notebooks/dlt_demo_notebook.sql

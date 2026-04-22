@@ -1,4 +1,4 @@
 variables : 
   catalog : 
     description: This is the name of the target
-    default : dev
+    default : workspace

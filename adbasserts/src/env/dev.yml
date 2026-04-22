@@ -3,5 +3,5 @@ targets:
     permissions:
       - group_name: de_group
         level: CAN_MANAGE
-    persists :
+    presets: 
       name_prefix: "dev ${workspace.current_user.short_name}"

@@ -11,7 +11,7 @@ include:
 
 permissions: 
   - group_name: dataengineer_team
-  - level : CAN_MANAGE
+    level : CAN_MANAGE
 
 targets:
   # The 'dev' target, for development purposes. This target is the default.

@@ -2,7 +2,7 @@ targets:
   dev:
     permissions:
       - group_name: de_group
-      - level : CAN_VIEW
+        level : CAN_VIEW
       - group_name:  de_analyst
-      - level : CAN_RUN
+        level : CAN_RUN
   
