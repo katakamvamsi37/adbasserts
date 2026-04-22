@@ -2,4 +2,4 @@ resources:
   schemas:
     bronze_schema : 
       name : default
-      catalog_name:  ${src.variables.catalog.default}
+      catalog_name:  ${variables.catalog.default}

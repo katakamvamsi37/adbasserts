@@ -1,7 +1,7 @@
 targets:
   dev:
     permissions:
-      - group_name: de_group
+      - group_name: DataEngineer
         level : CAN_VIEW
       - group_name:  de_analyst
         level : CAN_RUN

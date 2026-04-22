@@ -1,7 +1,8 @@
 targets:
   dev:
     permissions:
-      - group_name: de_group
+      - group_name: DataEngineer
         level: CAN_MANAGE
     presets: 
       name_prefix: "dev ${workspace.current_user.short_name}"
+      source_linked_deployment : false

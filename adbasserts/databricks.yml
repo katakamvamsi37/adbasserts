@@ -9,9 +9,6 @@ include:
   - resources/Notebooks/*.yml
   - resources/Pipelines/*.yml
 
-permissions: 
-  - group_name: dataengineer_team
-    level : CAN_MANAGE
 
 targets:
   # The 'dev' target, for development purposes. This target is the default.
@@ -20,6 +17,9 @@ targets:
     default: true
     workspace:
       host: https://dbc-aef068b2-51b0.cloud.databricks.com
+    permissions:
+      - user_name: katakamvamsi37@gmail.com
+        level: CAN_MANAGE
   qa:
     default : false
     workspace:

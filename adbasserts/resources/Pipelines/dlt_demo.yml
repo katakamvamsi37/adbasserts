@@ -6,8 +6,9 @@ resources:
       development: false
       continuous: false
       photon: true
-      catalog: ${resources.schemas.bronze_schema.catalog_name}
-      schema: ${resources.schemas.bronze_schema.name}
+      catalog: workspace
+      schema: default
+      serverless: true 
       libraries:
         - notebook:
             path: ../Notebooks/dlt_demo_notebook.sql
