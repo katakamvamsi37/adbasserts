@@ -1,0 +1,13 @@
+resources:
+  jobs:
+    assert_first_job:
+      name: assert_first_job
+      tasks:
+        - task_key: First_Job
+          notebook_task:
+            notebook_path: /Repos/katakamvamsi37@gmail.com/adbasserts/adbasserts/resources/Notebooks/First
+              NoteBook
+            source: WORKSPACE
+      queue:
+        enabled: true
+      performance_target: PERFORMANCE_OPTIMIZED

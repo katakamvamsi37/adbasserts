@@ -3,8 +3,15 @@ bundle:
   name: "adbasserts"
 
 include:
-  - resources/*.yml
-  - resources/*/*.yml
+  - src/*.yml
+  - src/env/*.yml
+  - resources/Jobs/*.yml
+  - resources/Notebooks/*.yml
+  - resources/Pipelines/*.yml
+
+permissions: 
+  - group_name: dataengineer_team
+  - level : CAN_MANAGE
 
 targets:
   # The 'dev' target, for development purposes. This target is the default.
@@ -13,7 +20,10 @@ targets:
     default: true
     workspace:
       host: https://dbc-aef068b2-51b0.cloud.databricks.com
-
+  qa:
+    default : false
+    workspace:
+      host : https://dbc-aef068b2-51b0.cloud.databricks.com
   # The 'prod' target, used for production deployment.
   prod:
     mode: production
